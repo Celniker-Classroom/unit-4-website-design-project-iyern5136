@@ -1,1 +1,25 @@
 /* Add Global styles here */
+
+body{
+    margin-left: 40px;
+    color: white
+}
+img{
+    border-radius:30px;
+}
+
+h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+table{
+    border-color: white;
+    border-width: 5px;
+}
+
