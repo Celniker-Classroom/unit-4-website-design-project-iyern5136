@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <script src="script.js"></script>
     <style>
         body{
             background-color:rgb(22, 53, 109);
@@ -11,9 +12,9 @@
         div{
             padding: 80px;
         }
-        p{
-            
-            
+        .lightmode{
+            background-color: rgb(107, 137, 191);
+            color: black;
         }
        
     </style>
@@ -37,6 +38,7 @@
    
    
    <main>
+    <button onclick="lightmode()">Light Mode</button>
     <p style="text-align: center;">Indoor Volleyball is the most popular branch of volleyball. It is played with 6 players on the court, and is a fast-paced game of reflexes. There are different roles/positions in indoor volleyball. </p>
 
 <!--Setter-->
@@ -106,6 +108,9 @@
     <div class="nextprev">
       <a href="beach.html">Next</a>
     </div>
+
+    <!---Scroll to top button-->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
     
 
 
