@@ -2,11 +2,12 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
-    <title>Gear</title>
+    <script src="script.js"></script>
+    <title>Gear Page</title>
 
     <style>
         body{
-            background-color:darkslategrey
+            background-color:darkslategrey;
         }
         td{
             font-size: 20px;
@@ -17,11 +18,16 @@
             font-size: 25px;
             padding: 8px;
         }
+        .lightmode{
+            background-color: rgb(105, 163, 163);
+            color: black;
+        }
+
     </style>
 </head>
 
 <body>
-    <h1>Volleyball Gear</h1>
+    <h1 class="pagetitle"> </h1>
 
 
     <!---Navigation Bar-->
@@ -38,6 +44,7 @@
 
 
 <main>
+    <button class="modebutton" onclick="lightmode()">Light/Dark Mode</button>
     <h2>Gear is used in volleyball to protect players from injury and improve their performance.</h2>
     <h3>Common Gear for Indoor:</h3>
     

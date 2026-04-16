@@ -4,19 +4,23 @@
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 
-    <title>Guide to Volleyball</title>
+    <title>Guide to Volleyball Page</title>
     
     <style>
       body{
         background-color: maroon;
         text-align: center;
       }
+      .lightmode{
+        background-color: rgb(168, 102, 102);
+        color: black;
+      }
   
     </style>
 
   </head>
   <body>
-    <h1>Volleyball</h1>
+    <h1 class="pagetitle"></h1>
 
     <!---Navigation Bar-->
     <nav class="navbar">
@@ -34,6 +38,7 @@
 
 
   <main>
+    <button class="modebutton" onclick="lightmode()">Light/Dark Mode</button>
     <p>Volleyball is a fun sport. It is played by both men and women, and is offered in most high schools. </p>
     <h3>About me:</h3>
     <button type="aboutmebutton" onclick="typeWriter()">Click Me!</button>

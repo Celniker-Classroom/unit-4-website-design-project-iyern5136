@@ -31,7 +31,11 @@ p{
     background-color: rgb(70, 71, 73);
     overflow: hidden;
     font-size: 30px;
-    padding: 20px
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensures it stays above other content */
+
     
 }
 
@@ -112,3 +116,6 @@ p{
     font-size:20px;
 }
 
+.modebutton{
+    padding: 10px;
+}

@@ -46,3 +46,63 @@ function lightmode() {
   var element = document.body;
   element.classList.toggle("lightmode");
 }
+
+
+
+
+
+
+function titletyped{
+  if (document.title === "Guide to Volleyball Page"){
+    var i = 0;
+    var txt = 'Volleyball:'; /* The text */
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+    if (i < txt.length) {
+        document.getElementById("pagetitle").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+  }
+
+  else if //page title = Positions Page
+    var i = 0;
+    var txt = 'Positions:'; /* The text */
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+    if (i < txt.length) {
+      document.getElementById("pagetitle").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+
+  else if //page title = Beach Volleyball Page
+      var i = 0;
+      var txt = 'Beach Volleyball'; /* The text */
+      var speed = 50; /* The speed/duration of the effect in milliseconds */
+      if (i < txt.length) {
+        document.getElementById("pagetitle").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+
+  else if //page title = Gear Page
+      var i = 0;
+      var txt = 'Volleyball Gear'; /* The text */
+      var speed = 50; /* The speed/duration of the effect in milliseconds */
+      if (i < txt.length) {
+        document.getElementById("pagetitle").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+  else if //page title = Skills Page
+      var i = 0;
+      var txt = 'Tips and Drills for Skills'; /* The text */
+      var speed = 50; /* The speed/duration of the effect in milliseconds */
+      if (i < txt.length) {
+        document.getElementById("pagetitle").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    
+
+
+}

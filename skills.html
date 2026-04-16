@@ -2,7 +2,8 @@
 <html>
 <head>
     <link rel="stylesheet" href="styles.css">
-    <title>Volleyball Skills Tips</title>
+    <script src="script.js"></script>
+    <title>Skills Page</title>
     <style>
         body{
             background-color: rgb(95, 44, 97);
@@ -10,12 +11,16 @@
         p{
             font-size: 50px;
         }
+        .lightmode{
+            background-color: rgb(165, 131, 166);
+            color: black;
+        }
 
         
     </style>
 </head>
 <body>
-    <h1>Tips and Drills for Skills</h1>
+    <h1 class="pagetitle"></h1>
 
     <!---Navigation Bar-->
     <nav class="navbar">
@@ -29,6 +34,7 @@
     </nav>
 
     <main>
+    <button class="modebutton" onclick="lightmode()">Light/Dark Mode</button>
     <h3>Of course, the hardest part of volleyball is getting good at it. Here are some tips from my experience and the best drills for the following skills:</h3>
 
     <ul class="skilllist">
