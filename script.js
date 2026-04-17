@@ -1,17 +1,32 @@
 // typewriter effect
 
 var i = 0;
-var txt = 'I am Nina Iyer, a 9th grader at Canyon Crest Academy, and I have played both indoor and beach volleyball here at CCA. This site is a guide to the world of volleyball, based on my experience!'; /* The text */
+var aboutmetxt = 'I am Nina Iyer, a 9th grader at Canyon Crest Academy, and I have played both indoor and beach volleyball here at CCA. This site is a guide to the world of volleyball, based on my experience!'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
     console.log("button clicked");
-  if (i < txt.length) {
+  if (i < aboutmetxt.length) {
     document.getElementById("aboutme").innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -41,6 +56,28 @@ function topFunction() {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //light mode button
 function lightmode() {
   var element = document.body;
@@ -52,57 +89,58 @@ function lightmode() {
 
 
 
-function titletyped{
-  if (document.title === "Guide to Volleyball Page"){
-    var i = 0;
-    var txt = 'Volleyball:'; /* The text */
-    var speed = 50; /* The speed/duration of the effect in milliseconds */
-    if (i < txt.length) {
-        document.getElementById("pagetitle").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-    }
-  }
 
-  else if //page title = Positions Page
-    var i = 0;
-    var txt = 'Positions:'; /* The text */
-    var speed = 50; /* The speed/duration of the effect in milliseconds */
-    if (i < txt.length) {
-      document.getElementById("pagetitle").innerHTML += txt.charAt(i);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function titletyped(){
+  alert(document.title);
+  var titletxt;
+  var i=0;
+  var speed = 50; /* The speed/duration of the effect in milliseconds */
+  
+  if (document.title === "Guide to Volleyball Page"){
+    titletxt = 'Volleyball:'; /* The text */
+  }
+  else if (document.title === "Positions Page") {
+    titletxt = 'Positions:'; /* The text */
+    
+  }
+  else if (document.title === "Beach Volleyball Page") {
+      titletxt = 'Beach Volleyball'; /* The text */
+      
+  }
+  else if (document.title === "Gear Page") {
+      titletxt = 'Volleyball Gear'; /* The text */
+      
+  }
+  else if (document.title === "Skills Page") {
+      titletxt = 'Tips and Drills for Skills'; /* The text */
+      
+  }
+  
+  if (i < titletxt.length) {
+      document.getElementById("pagetitle").innerHTML += titletxt.charAt(i);
       i++;
       setTimeout(typeWriter, speed);
-    }
-
-  else if //page title = Beach Volleyball Page
-      var i = 0;
-      var txt = 'Beach Volleyball'; /* The text */
-      var speed = 50; /* The speed/duration of the effect in milliseconds */
-      if (i < txt.length) {
-        document.getElementById("pagetitle").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-
-  else if //page title = Gear Page
-      var i = 0;
-      var txt = 'Volleyball Gear'; /* The text */
-      var speed = 50; /* The speed/duration of the effect in milliseconds */
-      if (i < txt.length) {
-        document.getElementById("pagetitle").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-  else if //page title = Skills Page
-      var i = 0;
-      var txt = 'Tips and Drills for Skills'; /* The text */
-      var speed = 50; /* The speed/duration of the effect in milliseconds */
-      if (i < txt.length) {
-        document.getElementById("pagetitle").innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, speed);
-      }
-    
-
-
+  }
 }
+
+//actually call title typwriter function
+
