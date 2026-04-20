@@ -119,3 +119,11 @@ p{
 .modebutton{
     padding: 10px;
 }
+
+
+.skillsimages{
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
