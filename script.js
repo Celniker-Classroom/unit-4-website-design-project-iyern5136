@@ -1,16 +1,18 @@
 // typewriter effect
 
 var k = 0;
+
 var aboutmetxt = 'I am Nina Iyer, a 9th grader at Canyon Crest Academy, and I have played both indoor and beach volleyball here at CCA. This site is a guide to the world of volleyball, based on my experience!'; /* The text */
 var speed = 50; /* The speed/duration of the effect in milliseconds */
 
 function typeWriter() {
-    console.log("button clicked");
+  
   if (k < aboutmetxt.length) {
-    document.getElementById("aboutme").innerHTML += txt.charAt(k);
-    k++;
-    setTimeout(typeWriter, speed);
-  }
+        document.getElementById("aboutme").innerHTML += aboutmetxt.charAt(k);
+        k++;
+        // 3. Call the correct function name with a delay
+        setTimeout(typeWriter, speed);
+    }
 }
 
 
